@@ -40,7 +40,7 @@ I'm a passionate developer who loves building clean and functional web experienc
 ## 📬 Contact
 Email: jogarajiyaakshay@gmail.com
 
-LinkedIn: Your LinkedIn
+LinkedIn: https://www.linkedin.com/in/akshay-jogarajiya
 
 GitHub: https://github.com/Akshay-Jogarajiya/
 

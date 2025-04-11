@@ -32,7 +32,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 
 ## 🌍 Live Preview
-Check out the live version here: Your Live Website Link
+Check out the live version here: https://akshay-jogarajiya.github.io/portfolio/
 
 ## 🙋‍♂️ About Me
 I'm a passionate developer who loves building clean and functional web experiences. Feel free to connect with me through the contact section or via social links.

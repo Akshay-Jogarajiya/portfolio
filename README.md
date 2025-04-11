@@ -23,27 +23,27 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 ## 🛠️ Installation & Usage
 
 1. Clone the repository:
-   git clone https://github.com/your-username/your-repo-name.git
+      git clone https://github.com/your-username/your-repo-name.git
 
 2. Navigate into the folder:
-    cd your-repo-name
+       cd your-repo-name
 
 3. Open index.html in your browser.
 
 
-🌍 Live Preview
+## 🌍 Live Preview
 Check out the live version here: Your Live Website Link
 
-🙋‍♂️ About Me
+## 🙋‍♂️ About Me
 I'm a passionate developer who loves building clean and functional web experiences. Feel free to connect with me through the contact section or via social links.
 
-📬 Contact
+## 📬 Contact
 Email: jogarajiyaakshay@gmail.com
 
 LinkedIn: Your LinkedIn
 
-GitHub: Your GitHub
+GitHub: https://github.com/Akshay-Jogarajiya/
 
-📄 License
+## 📄 License
 This project is open source and available under the MIT License.
    

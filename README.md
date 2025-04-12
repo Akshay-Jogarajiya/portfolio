@@ -18,7 +18,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## 📸 Screenshots
 
-     
+Home Section :     
  ![Home Section](images/home_page.png)
 
 ## 🛠️ Installation & Usage

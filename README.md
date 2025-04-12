@@ -22,6 +22,23 @@ Home Section :
 
  ![Home Section](images/home_page.png)
 
+About Section :     
+
+ ![About Section](images/about_page.png)
+
+Project Section :     
+
+ ![Project Section](images/project_page.png) 
+
+Skills Section :     
+
+ ![Skills Section](images/skills_page.png)
+
+Contact Section :     
+
+ ![Contact Section](images/contact_page.png)
+
+
 ## 🛠️ Installation & Usage
 
 1. Clone the repository:

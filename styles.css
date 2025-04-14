@@ -546,11 +546,15 @@
   }
 
   .springBoot-logo {
-    height: 2.5rem;
+    height: 2.8rem;
   }
 
   .postman-logo {
     height: 2.3rem;
+  }
+
+  .JUnit5-logo {
+    height: 2.9rem;
   }
 
   .skill-name {

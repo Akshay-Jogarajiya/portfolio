@@ -405,18 +405,27 @@
                 <input type="hidden" name="_template" value="box">    
                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/">            
               </div>
+            
               <div class="form-group">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+                <div id="name-error" class="error-message"></div>
               </div>
+            
               <div class="form-group">
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <input type="email" id="email" name="email" placeholder="Your Email">
+                <div id="email-error" class="error-message"></div>
               </div>
+            
               <div class="form-group">
                 <input type="text" id="subject" name="subject" placeholder="Subject">
+                <div id="subject-error" class="error-message"></div>
               </div>
+            
               <div class="form-group">
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                <div id="message-error" class="error-message"></div>
               </div>
+            
               <button type="submit" class="btn btn-primary submit-btn">
                 <i class="fas fa-paper-plane"></i> Send Message
               </button>

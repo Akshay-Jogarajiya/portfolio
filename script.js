@@ -177,14 +177,52 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-  const form = document.getElementById("contact-form");
-  const messageBox = document.getElementById("form-message");
+const form = document.getElementById("contact-form");
+const messageBox = document.getElementById("form-message");
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+form.addEventListener("submit", function (e) {
+  e.preventDefault();  // Prevent default form submission
 
+  // Clear previous error messages
+  clearErrors();  
+
+  let isValid = true;
+
+  // Name validation
+  const name = document.getElementById('name');
+  if (name.value.trim() === '') {
+    showError(name, 'Name is required.');
+    isValid = false;
+  }
+
+  // Email validation
+  const email = document.getElementById('email');
+  const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  if (email.value.trim() === '') {
+    showError(email, 'Email is required.');
+    isValid = false;
+  } else if (!emailPattern.test(email.value.trim())) {
+    showError(email, 'Please enter a valid email address.');
+    isValid = false;
+  }
+
+  // Subject validation (optional)
+  const subject = document.getElementById('subject');
+  if (subject.value.trim() === '') {
+    showError(subject, 'Subject is required.');
+    isValid = false;
+  }
+
+  // Message validation
+  const message = document.getElementById('message');
+  if (message.value.trim() === '') {
+    showError(message, 'Message is required.');
+    isValid = false;
+  }
+
+  // If form is valid, submit it using fetch
+  if (isValid) {
     const formData = new FormData(form);
-
     fetch("https://formsubmit.co/39b2f4e8bce62b15736814d6e2e36a32", {
       method: "POST",
       body: formData,
@@ -195,7 +233,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     .then(response => {
       if (response.ok) {
         messageBox.innerHTML = "<span style='color: green;'>✅ Message sent successfully!</span>";
-        form.reset();
+        form.reset(); // Clear the form after submission
       } else {
         messageBox.innerHTML = "<span style='color: red;'>❌ Something went wrong. Please try again.</span>";
       }
@@ -203,5 +241,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     .catch(error => {
       messageBox.innerHTML = "<span style='color: red;'>❌ Failed to send message. Try again later.</span>";
     });
-  });
+  }
+});
 
+// Error message display function
+function showError(input, message) {
+  const errorDiv = document.getElementById(input.id + '-error');
+  errorDiv.textContent = message;
+  input.classList.add('error');
+}
+
+// Clear error messages
+function clearErrors() {
+  const errors = document.querySelectorAll('.error-message');
+  errors.forEach(error => error.textContent = '');
+
+  const inputs = document.querySelectorAll('input, textarea');
+  inputs.forEach(input => input.classList.remove('error'));
+}

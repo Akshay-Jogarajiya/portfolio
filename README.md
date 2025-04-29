@@ -42,10 +42,12 @@ Contact Section :
 ## 🛠️ Installation & Usage
 
 1. Clone the repository:
-      git clone https://github.com/your-username/your-repo-name.git
+   ```bash
+      git clone https://github.com/Akshay-Jogarajiya/portfolio
 
 2. Navigate into the folder:
-       cd your-repo-name
+   ```bash
+       cd portfolio
 
 3. Open index.html in your browser.
 
